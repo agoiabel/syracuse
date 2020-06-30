@@ -1,0 +1,871 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------------------------------------------------------------------------------------------
+
+Super Form Reset
+
+A couple of things to watch out for:
+
+- IE8: If a text input doesn't have padding on all sides or none the text won't be centered.
+- The default border sizes on text inputs in all UAs seem to be slightly different. You're better off using custom borders.
+- You NEED to set the font-size and family on all form elements
+- Search inputs need to have their appearance reset and the box-sizing set to content-box to match other UAs
+- You can style the upload button in webkit using ::-webkit-file-upload-button
+- ::-webkit-file-upload-button selectors can't be used in the same selector as normal ones. FF and IE freak out.
+- IE: You don't need to fake inline-block with labels and form controls in IE. They function as inline-block.
+- By turning off ::-webkit-search-decoration, it removes the extra whitespace on the left on search inputs
+
+----------------------------------------------------------------------------------------------------*/
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type=reset],
+input[type=button],
+input[type=submit] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+}
+
+@font-face {
+  font-family: "Archia-thin";
+  src: url("../fonts/archia-thin-webfont/archia-thin-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-thin-webfont/archia-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-thin-webfont/archia-thin-webfont.woff2") format("woff2"), url("../fonts/archia-thin-webfont/archia-thin-webfont.woff") format("woff"), url("../fonts/archia-thin-webfont/archia-thin-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-light";
+  src: url("../fonts/archia-light-webfont/archia-light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-light-webfont/archia-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-light-webfont/archia-light-webfont.woff2") format("woff2"), url("../fonts/archia-light-webfont/archia-light-webfont.woff") format("woff"), url("../fonts/archia-light-webfont/archia-light-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-medium";
+  src: url("../fonts/archia-medium-webfont/archia-medium-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-medium-webfont/archia-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-medium-webfont/archia-medium-webfont.woff2") format("woff2"), url("../fonts/archia-medium-webfont/archia-medium-webfont.woff") format("woff"), url("../fonts/archia-medium-webfont/archia-medium-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-regular";
+  src: url("../fonts/archia-regular-webfont/archia-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-regular-webfont/archia-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-regular-webfont/archia-regular-webfont.woff2") format("woff2"), url("../fonts/archia-regular-webfont/archia-regular-webfont.woff") format("woff"), url("../fonts/archia-regular-webfont/archia-regular-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-semibold";
+  src: url("../fonts/archia-semibold-webfont/archia-semibold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-semibold-webfont/archia-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-semibold-webfont/archia-semibold-webfont.woff2") format("woff2"), url("../fonts/archia-semibold-webfont/archia-semibold-webfont.woff") format("woff"), url("../fonts/archia-semibold-webfont/archia-semibold-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Archia-bold";
+  src: url("../fonts/archia-bold-webfont/archia-bold-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/archia-bold-webfont/archia-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/archia-bold-webfont/archia-bold-webfont.woff2") format("woff2"), url("../fonts/archia-bold-webfont/archia-bold-webfont.woff") format("woff"), url("../fonts/archia-bold-webfont/archia-bold-webfont.ttf") format("truetype");
+}
+body {
+  background: #F8F8F8;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #333333;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #F8ECCB;
+}
+
+.center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 1000px) {
+  .center {
+    justify-content: flex-start;
+  }
+}
+
+.form__group {
+  margin-bottom: 45px;
+}
+.form__label {
+  display: block;
+  font-family: "Archia-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+.form__control {
+  width: 100%;
+  border-bottom: 1px solid #828282;
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #C0C0C0;
+  padding-bottom: 5px;
+}
+.form__control::placeholder {
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #C0C0C0;
+}
+.form__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #333333;
+  border-bottom: 3px solid #F8ECCB;
+}
+.form__button img {
+  margin-left: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 150px;
+  background: #0E0C0B;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #F8F8F8;
+}
+.footer .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0 40px 0;
+}
+.footer .email_to {
+  margin-bottom: 55px;
+}
+.footer .email_to__title, .footer .email_to__body {
+  text-transform: uppercase;
+  font-family: "Archia-bold";
+  letter-spacing: 0.1em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #F8F8F8;
+}
+.footer .email_to__body {
+  cursor: pointer;
+  margin-top: 15px;
+  text-transform: lowercase;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  display: inline-table;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #333333;
+}
+@media only screen and (min-width: 1000px) {
+  .footer .footer_items {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.footer .footer_item {
+  margin-right: 70px;
+  margin-bottom: 55px;
+}
+.footer .footer_item__top {
+  margin-bottom: 35px;
+}
+.footer .footer_item__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+.footer .footer_item__description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #F8F8F8;
+}
+.footer .footer_item a {
+  display: block;
+  cursor: pointer;
+  border-bottom: none;
+}
+@media only screen and (min-width: 600px) {
+  .footer .footer_item {
+    margin-right: 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .footer .footer_item {
+    margin-right: 200px;
+  }
+}
+.footer .footer_item_group {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 1000px) {
+  .projects {
+    padding: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.projects .project {
+  margin-bottom: 35px;
+}
+@media only screen and (min-width: 1000px) {
+  .projects .project {
+    width: 500px;
+    min-width: 500px;
+  }
+}
+.projects .project__title {
+  margin-top: 10px;
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #333333;
+  background: transparent;
+}
+.projects .project--large {
+  height: 450px;
+}
+.projects .project--small {
+  height: 300px;
+}
+.projects .project__techno {
+  background: #9068C0;
+}
+.projects .project__gionee {
+  background: #E48A7F;
+}
+.projects .project__oppo {
+  background: #8BBE45;
+}
+.projects .project__adidas {
+  background: #D81D6C;
+}
+.projects .project:hover .project__title::after {
+  z-index: -1;
+  content: " ";
+  display: block;
+  position: relative;
+  height: 15px;
+  background: #F8ECCB;
+  width: 130px;
+  top: -20px;
+}
+@media only screen and (min-width: 1000px) {
+  .projects .project__even {
+    margin-top: 170px;
+  }
+}
+.projects .see_more {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 1000px) {
+  .projects .see_more {
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -150px;
+  }
+}
+
+.company_section {
+  margin: 130px 0;
+  text-align: center;
+  background: #FFFFFF;
+  padding: 55px 35px;
+}
+.company_section .companies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 45px;
+}
+@media only screen and (min-width: 1000px) {
+  .company_section .companies {
+    margin-top: 80px;
+  }
+}
+.company_section .company {
+  width: 45%;
+  margin-bottom: 45px;
+}
+.company_section .company__title {
+  font-family: "Archia-bold";
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333333;
+}
+.company_section .company__subtitle {
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+@media only screen and (min-width: 1000px) {
+  .company_section .company__subtitle {
+    width: 30%;
+    margin: 10px auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .company_section .company {
+    width: 30%;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact_us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.contact_us__image {
+  width: 100%;
+  display: none;
+}
+.contact_us__image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .contact_us__image {
+    display: block;
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact_us .contact_us__description {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+.contact_us .contact_us__description__title {
+  font-family: "Archia-bold";
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center;
+  color: #333333;
+  margin-top: 5px;
+}
+@media only screen and (min-width: 1000px) {
+  .contact_us .contact_us__description__title {
+    font-size: 80px;
+    line-height: 64px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    margin: 15px 0 100px 0;
+  }
+  .contact_us .contact_us__description__title span {
+    display: block;
+  }
+  .contact_us .contact_us__description__title span.contact_us__description__title--header {
+    margin-left: 70px;
+  }
+}
+.contact_us .contact_us__description__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+@media only screen and (min-width: 1000px) {
+  .contact_us .contact_us__description__subtitle--header {
+    display: block;
+    text-align: left;
+  }
+}
+.contact_us .contact_us__description__form {
+  margin-top: 45px;
+}
+
+.top {
+  height: 85vh;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 85%;
+  margin: 120px auto;
+  text-align: center;
+}
+.banner__notification {
+  padding: 10px 25px;
+  border-radius: 30px;
+  display: inline-flex;
+  background: #F8ECCB;
+}
+.banner__notification__message {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #E55D2D;
+}
+.banner__description {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  color: #333333;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin: 25px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .banner__description {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.05em;
+    width: 40%;
+    margin: 30px auto;
+  }
+}
+.banner__subdescription {
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333333;
+}
+@media only screen and (min-width: 1000px) {
+  .banner__subdescription {
+    width: 40%;
+    margin: 30px auto;
+  }
+}
+
+.scroll_direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.scroll_direction__title {
+  margin-bottom: 25px;
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+@media only screen and (min-width: 1000px) {
+  .scroll_direction__title {
+    writing-mode: tb-rl;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .scroll_direction {
+    display: none;
+  }
+}
+.scroll_direction__web {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .scroll_direction__web {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.scroll_direction__web .say_hello {
+  writing-mode: tb-rl;
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+
+.top_strategy {
+  margin: 130px 0;
+  background: #FFFFFF;
+  padding: 55px 35px;
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy {
+    padding: 70px 100px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy__header {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.top_strategy__title {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #333333;
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy__title {
+    width: 65%;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+}
+.top_strategy__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy__subtitle {
+    width: 65%;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
+.top_strategy__image {
+  margin: 70px 0;
+  width: 100%;
+}
+.top_strategy__image img {
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy__image {
+    width: 50%;
+    margin-top: -10px;
+  }
+  .top_strategy__image img {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy .strategies {
+    display: flex;
+  }
+}
+.top_strategy .strategies .strategy {
+  margin-top: 45px;
+  margin-right: 100px;
+}
+.top_strategy .strategies .strategy__title {
+  font-family: "Archia-bold";
+  letter-spacing: -0.01em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  color: #333333;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.top_strategy .strategies .strategy__description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+@media only screen and (min-width: 1000px) {
+  .top_strategy .strategies .strategy {
+    width: 18%;
+  }
+}
+
+.diploma_blog {
+  margin: 130px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .diploma_blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.diploma_blog .diploma,
+.diploma_blog .blog {
+  margin-bottom: 45px;
+}
+@media only screen and (min-width: 1000px) {
+  .diploma_blog .diploma,
+.diploma_blog .blog {
+    width: 27%;
+  }
+}
+.diploma_blog__title {
+  font-family: "Archia-bold";
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+}
+.diploma_blog__title span {
+  color: #E55D2D;
+}
+@media only screen and (min-width: 1000px) {
+  .diploma_blog__title {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+}
+.diploma_blog__description {
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin: 30px 0 50px 0;
+}
+
+/*# sourceMappingURL=app.css.map */

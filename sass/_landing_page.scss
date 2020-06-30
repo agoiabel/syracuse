@@ -1,0 +1,282 @@
+.top {
+    height: 85vh;
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header_banner {}
+
+.banner {
+    width: 85%;
+    margin: 120px auto;
+    text-align: center;
+
+    &__notification {
+        padding: 10px 25px;
+        border-radius: 30px;
+        display: inline-flex;
+        background: #F8ECCB;
+    
+        &__message {
+            font-family: 'Archia-bold';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;        
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+                    
+            color: #E55D2D;
+        }
+    }
+    &__description {
+        font-family: 'Archia-bold';
+        font-style: normal;
+        font-weight: bold;
+        color: #333333;
+        font-size: 40px;
+        line-height: 44px;        
+        letter-spacing: -0.02em;        
+        margin: 25px 0;
+
+        @include screen('desktop') {
+            font-size: 64px;
+            line-height: 64px;
+            letter-spacing: -0.05em;
+
+            width: 40%;
+            margin: 30px auto;
+        }
+    }
+    &__subdescription {
+        font-family: "Roboto";
+        letter-spacing: 0.02em;        
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;        
+        color: #333333;
+
+        @include screen('desktop') {
+            width: 40%;
+            margin: 30px auto;
+        }
+    }
+}
+
+.scroll_direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    &__title {
+        margin-bottom: 25px;
+
+        font-family: 'Archia-bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4F4F4F;
+
+        @include screen('desktop') {
+            writing-mode: tb-rl;
+        }
+    }
+
+    @include screen('desktop') {
+        display: none;
+    }
+
+    &__web {
+        display: none;
+
+        @include screen('desktop') {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }    
+
+        .say_hello {
+            writing-mode: tb-rl;
+
+            font-family: 'Archia-bold';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #4F4F4F;
+        }
+    }
+}
+
+
+.top_strategy {
+    margin: 130px 0;
+
+    background: #FFFFFF;
+    padding: 55px 35px;
+    @include screen('desktop') {
+        padding: 70px 100px;
+    }
+
+    &__header {
+        @include screen('desktop') {
+            display: flex;
+            flex-direction: row;    
+        }    
+    }
+    &__description {
+        @include screen('desktop') {
+            // width: 50%;
+        }    
+    }
+
+    &__title {
+        font-family: "Archia-bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.01em;        
+        color: #333333;
+
+        @include screen('desktop') {
+            width: 65%;
+            font-size: 32px;
+            line-height: 36px;            
+            letter-spacing: -0.02em;
+        }    
+    }
+    &__subtitle {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;        
+        letter-spacing: 0.02em;        
+        color: #4F4F4F;
+
+        margin-top: 25px;
+
+        @include screen('desktop') {
+            width: 65%;
+            font-size: 20px;
+            line-height: 32px;            
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__image {
+        margin: 70px 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        @include screen('desktop') {
+            width: 50%;
+            margin-top: -10px;
+            img {
+                width: 500px;
+            }
+        }    
+    }
+
+
+    .strategies {
+        @include screen('desktop') {
+            display: flex;
+        }  
+
+        .strategy {
+    
+            margin-top: 45px;
+            margin-right: 100px;
+    
+            &__title {
+                font-family: "Archia-bold";
+                letter-spacing: -0.01em;
+                font-style: normal;
+                font-weight: bold;
+                line-height: 24px;
+                color: #333333;
+                font-size: 20px;
+    
+                margin: 15px 0;
+            }
+    
+            &__description {
+    
+                font-family: "Roboto";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #4F4F4F;
+            }
+            @include screen('desktop') {
+                width: 18%;
+            }  
+        }
+    }
+    
+}
+
+
+.diploma_blog {
+    margin: 130px 0;
+
+    @include screen('desktop') {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }  
+
+    .diploma,
+    .blog {
+        margin-bottom: 45px;
+
+        @include screen('desktop') {
+            width: 27%;
+        }  
+    }
+
+    &__title {
+        font-family: 'Archia-bold';
+        letter-spacing: -0.02em;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 28px;        
+        color: #333333;
+
+        span {
+            color: #E55D2D;
+        }
+
+        @include screen('desktop') {
+            font-size: 32px;
+            line-height: 36px;            
+            letter-spacing: -0.02em;
+        }  
+    }
+
+    &__description {
+        font-family: "Roboto";
+        letter-spacing: 0.02em;        
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;        
+        color: #4F4F4F;
+
+        margin: 30px 0 50px 0;
+    }
+}

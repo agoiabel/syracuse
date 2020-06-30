@@ -1,0 +1,89 @@
+.projects {
+
+    @include screen('desktop') {
+        padding: 0 100px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project {
+
+        @include screen('desktop') {
+            width: 500px;
+            min-width: 500px;
+        }
+
+        margin-bottom: 35px;
+    
+        &__title {
+            margin-top: 10px;
+            
+            font-family: "Archia-bold";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 36px;            
+            letter-spacing: -0.02em;            
+            color: #333333;
+
+            background: transparent;
+        }
+
+        &--large {
+            height: 450px;
+        }
+        &--small {
+            height: 300px;
+        }
+
+
+        &__techno {
+            background: #9068C0;        
+        }
+        &__gionee {
+            background: #E48A7F;
+        }
+        &__oppo {
+            background: #8BBE45;
+        }
+        &__adidas {
+            background: #D81D6C;
+        } 
+
+        &:hover {
+            .project__title::after {
+                z-index: -1;
+                content: " ";
+                display: block;
+                position: relative;
+                height: 15px;
+                background: #F8ECCB;
+                width: 130px;
+                top: -20px;
+            }
+        }
+    }
+        
+    .project__even {
+        @include screen('desktop') {
+            margin-top: 170px;
+        }
+    }
+
+    .see_more {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @include screen('desktop') {
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: -150px;
+        }
+    }
+}

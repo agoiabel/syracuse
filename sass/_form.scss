@@ -1,0 +1,73 @@
+//==================================================
+// Base CSS
+//==================================================
+.form {
+
+    &__group {
+        margin-bottom: 45px;
+    }
+
+    &__label {
+        display: block;
+
+        font-family: "Archia-regular";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #828282;
+
+        margin-bottom: 10px;
+    }
+    &__control {
+        width: 100%;
+
+        border-bottom: 1px solid #828282;
+        font-family: "Roboto";
+        letter-spacing: 0.02em;        
+
+        font-style: normal;
+        line-height: 32px;
+        font-weight: 300;
+        font-size: 20px;
+        
+        color: #C0C0C0;
+        padding-bottom: 5px;
+
+        &::placeholder {
+            font-family: "Roboto";
+            letter-spacing: 0.02em;        
+    
+            font-style: normal;
+            line-height: 32px;
+            font-weight: 300;
+            font-size: 20px;
+            
+            color: #C0C0C0;
+        }
+    }
+    &__button {        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        cursor: pointer;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;        
+        letter-spacing: 0.02em;
+                
+        color: #333333;
+
+        img {
+            margin-left: 5px;
+        }
+
+        // padding-bottom: 10px;
+        border-bottom: 3px solid #F8ECCB;
+
+
+    }
+}

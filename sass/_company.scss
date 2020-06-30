@@ -1,0 +1,56 @@
+.company_section {
+    margin: 130px 0;
+    text-align: center;
+
+    background: #FFFFFF;
+    padding: 55px 35px;
+
+    .companies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 45px;
+
+        @include screen('desktop') {
+            margin-top: 80px; 
+        }
+    }
+
+    .company {
+
+        width: 45%;
+        margin-bottom: 45px;
+        
+        &__title {
+            font-family: 'Archia-bold';
+            letter-spacing: -0.02em;        
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 36px;        
+            color: #333333;    
+        }
+        &__subtitle {
+            margin-top: 10px;
+
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;            
+            letter-spacing: 0.02em;            
+            color: #4F4F4F;
+
+            @include screen('desktop') {
+                width: 30%;
+                margin: 10px auto;
+            }        
+        }
+        @include screen('desktop') {
+            width: 30%;
+            margin-bottom: 60px;
+
+        }       
+    }
+}

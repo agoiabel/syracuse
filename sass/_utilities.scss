@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Archia-thin';
+    src: url('../fonts/archia-thin-webfont/archia-thin-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-thin-webfont/archia-thin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-thin-webfont/archia-thin-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-thin-webfont/archia-thin-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-thin-webfont/archia-thin-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Archia-light';
+    src: url('../fonts/archia-light-webfont/archia-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-light-webfont/archia-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-light-webfont/archia-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-light-webfont/archia-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-light-webfont/archia-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Archia-medium';
+    src: url('../fonts/archia-medium-webfont/archia-medium-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-medium-webfont/archia-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-medium-webfont/archia-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-medium-webfont/archia-medium-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-medium-webfont/archia-medium-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Archia-regular';
+    src: url('../fonts/archia-regular-webfont/archia-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-regular-webfont/archia-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-regular-webfont/archia-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-regular-webfont/archia-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-regular-webfont/archia-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Archia-semibold';
+    src: url('../fonts/archia-semibold-webfont/archia-semibold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-semibold-webfont/archia-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-semibold-webfont/archia-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-semibold-webfont/archia-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-semibold-webfont/archia-semibold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'Archia-bold';
+    src: url('../fonts/archia-bold-webfont/archia-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/archia-bold-webfont/archia-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/archia-bold-webfont/archia-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/archia-bold-webfont/archia-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/archia-bold-webfont/archia-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //  url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+//================================================================
+// Media queries # https://w3bits.com/sass-mixins/
+//================================================================
+@mixin screen($size) {
+    $tablet: "(min-width: 600px)";
+    $desktop: "(min-width: 1000px)";
+
+    @if $size == desktop {
+        @media only screen and #{$desktop} {
+            @content;
+        }
+    }
+    @else if $size == tablet {
+        @media only screen and #{$tablet} {
+            @content;
+        }
+    }
+    @else {
+        @media only screen and #{$size} {
+            @content;
+        }
+    }
+}
+
+
+//======================================================================
+// Opacity
+//======================================================================
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity = $opacity-ie); //IE8
+}
+
+
+//=======================================================================
+// Center usage == @include center(90%);
+//=======================================================================
+@mixin center($width : 100%) {
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+//=======================================================================
+// Round Shape
+//=======================================================================
+@mixin round($dim) {
+    width: $dim;
+    height: $dim;
+    border-radius: $dim / 2;
+}
+
+
+//=======================================================================
+// EM generator
+//=======================================================================
+@mixin em($font-size) {
+    font-size: $font-size;
+    line-height: $font-size * 1.618;
+}
+
+
+//===============================================================================
+// Flex Helper
+//===============================================================================
+@mixin flex ($display: flex, $direction: null, $wrap: null, $justify: null) {
+    display: $display;
+    flex-direction: $direction;
+
+    flex-wrap: $wrap;    
+    justify-content: $justify;
+}
+
+
+//=======================================================================
+// BEM - Element
+//=======================================================================
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+
+//=======================================================================
+// BEM - Modifier
+//=======================================================================
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
