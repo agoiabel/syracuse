@@ -3,7 +3,10 @@
     text-align: center;
 
     background: #FFFFFF;
-    padding: 55px 35px;
+
+    @include screen('desktop') {
+        padding: 70px 100px;
+    }       
 
     .companies {
         display: flex;
