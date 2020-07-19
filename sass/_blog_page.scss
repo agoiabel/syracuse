@@ -1,4 +1,59 @@
-.blog {
+.wrapper_blog {
+   
+    @include screen('desktop') {
+        padding-left: 70px;
+    }  
+}
+.container_blog__content {
+    padding-left: 35px;
+}
+.blog__content {
+    margin-bottom: 60px;
 
+    @include screen('desktop') {
+        display: flex;
+        align-items: flex-start;
+    }  
+}
+.blog__date {
+    font-style: normal;
+    font-weight: normal;
+    color: #828282;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    @include screen('desktop') {
+        width: 7%;
+        margin-top: 5px;
+        margin-right: 60px;
+    }
+}
+.lorem {
+    margin-top: -300px;
+
+    @include screen('desktop') {
+        margin-top: -160px;
+    }
+}
+
+.container_blog__link{
+    // width: 100%;
+    @include screen('desktop') {
+        width: 40%;
+    }
+}
+.blog_link {
+    font-style: normal;
+    color: #4F4F4F;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+
+    @include screen('desktop') {
+        width: 50%;
+    }
 
 }
