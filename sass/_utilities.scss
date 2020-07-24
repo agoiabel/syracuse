@@ -150,3 +150,18 @@
         @content;
     }
 }
+
+// ======================================================================
+@mixin section_style {
+    font-family: 'Archia';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    display: none;
+    
+    line-height: 28px;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+// ======================================================================
