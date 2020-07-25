@@ -127,6 +127,7 @@
     }
 }
 .container_section2__content {
+    margin-top: 70px;
     .bmsm_content__heading2 {
         font-family: 'Archia-bold';
         font-style: normal;
@@ -178,6 +179,7 @@
 }
 .container_section3 {
     color: #333333;
+    margin-top: 40px;
 
     @include screen('desktop') {
            width: 65%;
