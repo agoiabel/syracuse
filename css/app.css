@@ -1425,4 +1425,53 @@ a {
       width: 55%;
       margin: 20px auto 60px; } }
 
+.scholarship_big__empty {
+  background: #8BBE45; }
+
+.container_scholarship__form {
+  color: #333333; }
+  .container_scholarship__form .scholarship_form__title {
+    font-family: 'Archia-bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em; }
+  .container_scholarship__form .scholarship_form__subtitle {
+    font-family: 'Archia-light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 60px;
+    text-align: center;
+    letter-spacing: 0.02em; }
+  @media only screen and (min-width: 1000px) {
+    .container_scholarship__form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; } }
+
+@media only screen and (min-width: 1000px) {
+  .scholarship_form {
+    width: 60%;
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 1000px) {
+  .scholarship_form__control {
+    display: flex; } }
+
+@media only screen and (min-width: 1000px) {
+  .scholarship_form__group {
+    width: 50%; } }
+
+.scholarship_form__break {
+  margin-right: 5%; }
+
+.scholarship_button {
+  display: flex;
+  justify-content: center; }
+
 /*# sourceMappingURL=app.css.map */

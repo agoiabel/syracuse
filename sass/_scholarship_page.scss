@@ -1,0 +1,56 @@
+.scholarship_big__empty {
+    background: #8BBE45;
+}
+.container_scholarship__form {
+    color: #333333;
+    .scholarship_form__title {
+        font-family: 'Archia-bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+    .scholarship_form__subtitle {
+        font-family: 'Archia-light';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 60px;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+  
+    @include screen('desktop') {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.scholarship_form {
+    
+    @include screen('desktop') {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+.scholarship_form__control {
+    @include screen('desktop') {
+       display: flex;
+    }
+}
+.scholarship_form__group {
+    @include screen('desktop') {
+        width: 50%;
+     }
+}
+.scholarship_form__break {
+    margin-right: 5%;
+}
+.scholarship_button {
+    display: flex;
+    justify-content: center;
+}
