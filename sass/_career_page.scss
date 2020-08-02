@@ -1,14 +1,21 @@
 .container_career__header {
     padding: 0;
     @include screen('desktop') {
-        padding-left: 100px;
+        padding-left: 50px;
     }
 
     .career_heading {
         margin-bottom: 60px;
         @include screen('desktop') {
-            width: 60%;
+            width: 90%;
+            font-size: 55px;
+            line-height: 60px;
+            letter-spacing: -0.05em;
         }
+    }
+    .career_fa__plus, 
+    .career_fa__arrowup {
+        display: none;
     }
 }
 
@@ -44,19 +51,55 @@
 }
 
 
-.container_career__section2 {
-    // margin-bottom: 60px;
-    .parent_career__section2 {
+.container_section2 {
+    @include screen('desktop') {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .career_section2__content {
+        margin-bottom: 60px;
         @include screen('desktop') {
-            flex-direction: row;
-            margin: 0 auto;
+            margin-bottom: 0;
+            width: 30%;
+        }
+    }
+    .section2_content__image {
+        width: 20%;
+    }
+    .career_section2__heading {
+        font-family: 'Archia-bold';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: #333333;
+        margin: 20px 0;
+        width: 60%;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        @include screen('desktop') {
+           
          }
     }
-    .career_section2__content {
-        width: 100%;
+    .career_section2__description {
+        font-family: 'Archia-light';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+      
+        letter-spacing: 0.02em;
+        
+        color: #4F4F4F;
+        
     }
+   
 }
 
 
@@ -77,6 +120,9 @@
          }
    }
    .career_big__empty2 {
+    background: #9068C0;
+    box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+
     @include screen('desktop') {
         width: 50%;
         height: 70vh;
@@ -89,6 +135,7 @@
 
 
 .container_career__section3 {
+    margin-top: 120px;
     margin-bottom: 200px;
     .career_section3__title {
         font-family: 'Archia-bold';
@@ -109,8 +156,9 @@
         font-weight: normal;
         font-size: 16px;
         color: #4F4F4F;
+        width: 90%;
+        margin: 0 auto 80px;
         line-height: 28px;
-        margin-bottom: 80px;
         text-align: center;
         letter-spacing: 0.02em;
         @include screen('desktop') {
@@ -134,7 +182,7 @@
             justify-content: space-between;
 
             @include screen('desktop') {
-                padding: 15px 30px;
+                padding: 15px 40px;
              }
            
            
