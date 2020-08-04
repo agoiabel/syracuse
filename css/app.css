@@ -1825,6 +1825,15 @@ a {
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .scholarship .bmsm_subtitle {
+    width: 40%;
+  }
+}
+.scholarship .container_section3 {
+  margin-top: 100px;
+}
+
 .scholarship_big__empty {
   background: #8BBE45;
 }
@@ -1842,7 +1851,7 @@ a {
   letter-spacing: -0.02em;
 }
 .container_scholarship__form .scholarship_form__subtitle {
-  font-family: "Archia-light";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1850,6 +1859,7 @@ a {
   margin-bottom: 60px;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-top: 15px;
 }
 @media only screen and (min-width: 1000px) {
   .container_scholarship__form {

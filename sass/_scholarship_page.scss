@@ -1,3 +1,13 @@
+.scholarship {
+    .bmsm_subtitle {
+        @include screen('desktop') {
+            width: 40%;
+        }
+    }
+    .container_section3 {
+        margin-top: 100px;
+    }
+}
 .scholarship_big__empty {
     background: #8BBE45;
 }
@@ -13,7 +23,7 @@
         letter-spacing: -0.02em;
     }
     .scholarship_form__subtitle {
-        font-family: 'Archia-light';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -21,6 +31,8 @@
         margin-bottom: 60px;
         text-align: center;
         letter-spacing: 0.02em;
+
+        margin-top: 15px;
     }
   
     @include screen('desktop') {
