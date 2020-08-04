@@ -7,14 +7,62 @@
     <title>Starter Kit</title>
 </head>
 <body>
+    <div class="navigation hide" id="navigation">
+        <div class="container">
+            <header class="header">
+                <div class="logo"><img src="./images/logo_white.svg" alt="logo.svg" /></div>
+                <div class="menu" onclick="menu('closed')"><img src="./images/menu_close.svg" alt="menu.svg" /></div>
+            </header>
+
+            <div class="navs_socials container">
+                <div class="nav_social">
+                    <div class="contact_navs">
+                        <div class="navs">
+                            <div class="nav" onclick="location.href = '/work.html';">Work</div>
+                            <div class="nav" onclick="location.href = '/bmsm.html';">MSBM Diploma</div>
+                            <div class="nav" onclick="location.href = '/scholarship.html';">The SA Fund</div>
+                            <div class="nav" onclick="location.href = '/career.html';">Careers</div>
+                            <div class="nav" onclick="location.href = '/about_us.html';">About</div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact__small">LET'S TALK ABOUT YOU</div>
+                            <div>hello@syracuseafrica.co</div>
+                            <div>+234 1 453 6589</div>
+                        </div>
+                    </div>
+
+                    <div class="address_socials">
+                        <div class="socials">
+                            <div class="social">Blog</div>
+                            <div class="social">Facebook</div>
+                            <div class="social">Instagram</div>
+                            <div class="social">Twitter</div>
+                            <div class="social">Linkedln</div>    
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact__small">OUR OFFICE</div>
+                            <div>54B, Adeniyi Jones Ave,</div>
+                            <div>Ikeja, Lagos.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="navigation__hello">Say hello</span>
+        </div>
+    </div>
+
     <div class="container work">
         
         <section class="top">
             <div class="header_banner">
                 <header class="header">
-                    <div class="logo"><img src="./images/logo.svg" alt="logo.svg" /></div>
-                    <div class="menu"><img src="./images/menu.svg" alt="menu.svg" /></div>
-                </header>    
+                    <div class="logo" onclick="location.href = '/index.html';"><img src="./images/logo.svg" alt="logo.svg" /></div>
+                    <div class="menu" id="menu__open" onclick="menu('open')"><img src="./images/menu.svg" alt="menu.svg" /></div>
+                </header>
+
                 <p class="page_title"> Work </p>
             </div>
 

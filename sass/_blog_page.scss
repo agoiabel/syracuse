@@ -1,11 +1,16 @@
-.wrapper_blog {
+.blog {
    
     @include screen('desktop') {
         padding-left: 70px;
     }  
-}
-.container_blog__content {
-    padding-left: 35px;
+
+    .top {
+        height: 60vh;
+        min-height: 60vh;
+    }    
+
+    .page_title {
+    }
 }
 .blog__content {
     margin-bottom: 60px;
