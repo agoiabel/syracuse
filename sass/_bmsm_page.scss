@@ -1,4 +1,7 @@
 
+.bmsm {
+
+}
 .container_bmsm__header {
     display: flex;
     text-align: center;
@@ -14,7 +17,7 @@
     }
 
     .bmsm_title__aside {
-        font-family: 'Archia-regular';
+        font-family: 'Archia-bold';
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
@@ -29,7 +32,7 @@
         }
     }
     .bmsm_title {
-        font-family: 'Archia-bold';
+        font-family: 'Archia-medium';
         font-style: normal;
         font-weight: 600;
         font-size: 32px;
@@ -41,26 +44,34 @@
 
         @include screen('desktop') {
             width: 45%;
-            
         }
     }
    
     .bmsm_subtitle {
         color: #828282;
-        font-family: 'Archia-light';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
-        margin: 15px 0 40px;
+        margin: 15px 0 80px;
         line-height: 32px;
         letter-spacing: 0.02em;
 
         @include screen('desktop') {
             width: 65%;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
     }
 
+    .bmsm_link {
+        font-family: "Archia-bold";
+        letter-spacing: -0.02em;        
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;        
+        color: #333333;
+    }
     .web_bmsm__subtitle {
         display: none;
 
@@ -75,27 +86,23 @@
     }
 }
 
-.container_bmsm {
-    margin-top: 160px;
-}
-
 .big_empty {
     width: 100%;
     height: 20vh;
-    // padding: 20px;
     background: #E48A7F;
     box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
 
     @include screen('desktop') {
        height: 80vh;
+       margin-top: -25px;
     }
 }
 
 .container_bmsm__maincontent {
-    padding: 70px 5px 40px 35px;
+    padding: 80px 5px 40px 35px;
 
     @include screen('desktop') {
-        padding: 70px 5px 40px 50px;
+        padding: 100px 5px 40px 50px;
      }
 
     .bmsm_content__heading1 {
@@ -109,10 +116,11 @@
 
         .heading_color {
             color: #E55D2D;
+            text-transform: uppercase;
         }
     }
     .bmsm_content__description {
-        font-family: 'Archia-medium';
+        font-family: 'Roboto';
         font-style: normal;
         color: #333333;
         font-weight: 300;
@@ -123,11 +131,15 @@
 
         @include screen('desktop') {
             width: 60%;
+            font-size: 20px;
+            line-height: 32px;
          }
     }
 }
 .container_section2__content {
-    margin-top: 70px;
+    
+    margin-top: 100px;
+
     .bmsm_content__heading2 {
         font-family: 'Archia-bold';
         font-style: normal;
@@ -147,7 +159,7 @@
          }
     }
     .wrapper_section2__maincontent {
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
     .section2_content__title {
         width: 80%;
@@ -156,7 +168,7 @@
         font-size: 20px;
         color: #333333;
         line-height: 24px;
-        font-family: 'Archia-semibold';
+        font-family: 'Archia-bold';
         margin: 20px 0 15px;
         letter-spacing: -0.01em;
     }
@@ -167,7 +179,7 @@
         display: none;
     }
     .section2_content__description {
-        font-family: 'Archia-medium';
+        font-family: 'Roboto';
         font-style: normal;
         width: 80%;
         font-weight: normal;
@@ -211,11 +223,27 @@
     .section3_web__list {
         display: none;
 
+
         @include screen('desktop') {
            display: block;
-         }
+           font-family: "Roboto";
+           font-style: normal;
+           font-weight: 300;
+           font-size: 20px;
+           line-height: 32px;           
+           letter-spacing: 0.02em;           
+           color: #333333;
+        }
     }
     .section3_mobile__list {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;        
+        letter-spacing: 0.02em;        
+        color: #333333;
+
         @include screen('desktop') {
             display: none;
           }
@@ -226,6 +254,14 @@
     .section4_title {
         width: 80%;
         margin: 0 auto 40px;
+
+        font-family: "Archia-bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;        
+        letter-spacing: -0.02em;        
+        color: #333333;
     }
     .section4_web__companies {
         display: none;
@@ -291,10 +327,15 @@
     }
 }
 .container_section6 {
+
+    background: #FFFFFF;
+
     @include screen('desktop') {
         padding: 70px 20px;
      }
     .section6_img {
+        margin-bottom: 50px;
+
         @include screen('desktop') {
             width: 40%;
             order: 1;
@@ -360,7 +401,7 @@
         }
     }
     .section7_description {
-        font-family: 'Archia-light';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
