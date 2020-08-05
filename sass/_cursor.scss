@@ -1,0 +1,24 @@
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid black;
+    
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+
+    z-index: -1;
+}
+
+.link__grow {
+    transform: scale(1.5);
+    background-color: black;
+}
+
+
+#link__grow span:hover {
+    color: #FFF;
+    cursor: pointer;
+}
