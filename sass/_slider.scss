@@ -1,0 +1,99 @@
+.slider_section {
+
+    padding-left: 11.5%;
+
+    &__title {
+        font-family: "Archia-bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;        
+        letter-spacing: -0.03em;        
+        color: #333333;
+
+    }
+    &__description {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;        
+        letter-spacing: 0.02em;        
+        color: #4F4F4F;
+        margin: 45px 0;
+
+        @include screen('desktop') {
+            width: 30%;
+        }
+    }
+
+    .sliders {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        
+        position: relative;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none; 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+ 
+
+    .slider {
+        width: 300px;
+        height: 450px;
+        flex-shrink: 0;
+        margin-right: 15px;
+        box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+
+        display: flex;
+        padding: 35px;
+        align-items: flex-end;
+
+        &__title {
+            font-family: "Archia-bold";
+            letter-spacing: -0.02em;            
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 28px;            
+            color: #FFFFFF;
+            font-size: 24px;
+            width: 80%;
+        }
+        &__link {
+            position: absolute;
+            top: 50%;
+            right: 1px;
+        }
+    }
+    .slider_one {
+        background: #9068C0;        
+    }
+    .slider_two {
+        background: #F1C191;        
+    }
+    .slider_three {
+        background: #8BBE45;        
+    }
+    .slider_four {
+        background: #D81D6C;        
+    }
+    .slider_five {
+        background: #9068C0;        
+    }
+    .slider_six {
+        background: #F1C191;        
+    }
+    .slider_seven {
+        background: #8BBE45;        
+    }
+    .slider_eight {
+        background: #8BBE45;        
+    }
+}

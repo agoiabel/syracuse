@@ -1,8 +1,6 @@
 .company_section {
-    margin: 130px 0;
+    margin: 100px auto;
     text-align: center;
-
-    background: #FFFFFF;
 
     @include screen('desktop') {
         padding: 70px 100px;
@@ -53,7 +51,6 @@
         @include screen('desktop') {
             width: 30%;
             margin-bottom: 60px;
-
         }       
     }
 }
