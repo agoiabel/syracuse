@@ -2672,7 +2672,7 @@ a {
 }
 .work_detail .location {
   display: flex;
-  margin-top: 150px;
+  margin: 150px auto;
 }
 .work_detail .location__step_one {
   margin-right: 100px;
