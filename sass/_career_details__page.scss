@@ -1,6 +1,15 @@
 .container_career2__header {
 
+    margin-top: 100px;
+
     .career_details__heading {
+        font-family: "Archia-medium";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 80px;        
+        letter-spacing: -0.05em;
+        
         @include screen('desktop') {
             width: 100%;
             font-weight: 600;
@@ -29,7 +38,14 @@
         margin-right: 20px;
     }
     .career2_subtitle {
+        font-family: "Roboto";
         margin-left: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;        
+        letter-spacing: 0.02em;        
+        color: #4F4F4F;
     }
     .header_subtitle {
         display: flex;
@@ -50,20 +66,23 @@
     .career_twitter__brand {
         margin: 0 15px;
     }
-   
-    
+}
+.career_container {
+    background: #FFFFFF;    
+    box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+
+    &__content {
+        padding: 65px;
+    }
 }
 .container_career2_details {
-    margin-top: -50px;
+    // margin-top: -50px;
     @include screen('desktop') {
         width: 80%;
         margin-top: 230px;
-        padding-left: 50px;
-        margin-bottom: -150px;
         padding-bottom: 80px;
         background: #FFFFFF;
         box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
-
     }
 }
 .career2_section1 {
@@ -98,7 +117,7 @@
 
 .career2_content {
     li {
-        font-family: 'Archia-light';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
@@ -107,10 +126,29 @@
         letter-spacing: 0.02em;
     }
 }
+
 .career_details__link {
     margin: 90px 0 60px;
     display: block;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;    
+    letter-spacing: 0.01em;    
+    color: #333333;
 }
 .career-fa-plus {
+    color: #333333;
+    font-weight: normal;
+}
+.career2_section_description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;    
+    letter-spacing: 0.02em;    
     color: #333333;
 }

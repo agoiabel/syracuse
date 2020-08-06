@@ -16,6 +16,7 @@ const mouseCursor = document.getElementById('cursor');
 const linkGrow = document.getElementById('link__grow');
 
 window.addEventListener('mousemove', event => {
+    mouseCursor.style.display = 'block';
     mouseCursor.style.top = (event.pageY - 10) + 'px';
     mouseCursor.style.left = (event.pageX - 10) + 'px';
 });

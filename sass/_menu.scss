@@ -18,10 +18,16 @@
 
     .nav_social {
         display: flex;
-        align-items: flex-end;
-        flex-direction: row;
-    }
+        flex-direction: column;
 
+        @include screen('desktop') {
+            flex-direction: row;
+            align-items: flex-end;
+        } 
+    }
+    .contact_navs {
+        margin-bottom: 25px;
+    }
     .navs {
         margin-right: 300px;
     }
@@ -31,24 +37,35 @@
         border: 0;
         display: block;
         color: #FFFFFF;
-
         text-decoration: none;
     }
     .nav {
+
+        cursor: pointer;
         font-family: "Archia-medium";
         font-style: normal;
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 80px;        
-        letter-spacing: -0.05em;
-        cursor: pointer;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;            
+
+        @include screen('desktop') {
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 80px;        
+            letter-spacing: -0.05em;
+        } 
     }
     .social {
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 16px;
+        line-height: 20px;
+
+        @include screen('desktop') {
+            font-size: 32px;
+            line-height: 48px;    
+        } 
     }
     .contact {
         margin-top: 45px;

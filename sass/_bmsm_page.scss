@@ -1,18 +1,16 @@
 
-.bmsm {
 
-}
 .container_bmsm__header {
     display: flex;
     text-align: center;
     align-items: center;
-    padding: 80px 20px 60px 20px;
+    // padding: 80px 20px 60px 20px;
     flex-direction: column;
 
     @include screen('desktop') {
         text-align: left;
         align-items: flex-start;
-        padding-left: 100px;
+        // padding-left: 100px;
         margin-bottom: -120px;
     }
 
@@ -99,7 +97,7 @@
 }
 
 .container_bmsm__maincontent {
-    padding: 80px 5px 40px 35px;
+    // padding: 80px 5px 40px 35px;
 
     @include screen('desktop') {
         padding: 100px 5px 40px 50px;
@@ -445,5 +443,20 @@
             margin: 20px auto 60px;
         }
 
+    }
+}
+
+
+.bmsm {
+    .container_bmsm__header {
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+
+    .container_bmsm {
+        margin-top: 85px;
+        @include screen('desktop') {
+            margin-top: 0;
+         }
     }
 }

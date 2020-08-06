@@ -8,18 +8,68 @@
     <title>Starter Kit</title>
 </head>
 <body>
-    <div class="container blog">
+
+    <div class="cursor" id="cursor"></div>
+    <div class="navigation hide" id="navigation">
+        <div class="container">
+            <header class="header">
+                <div class="logo" onclick="location.href = '/index.html';"><img src="./images/logo_white.svg" alt="logo.svg" /></div>
+                <div class="menu" onclick="menu('closed')"><img src="./images/menu_close.svg" alt="menu.svg" /></div>
+            </header>
+
+            <div class="navs_socials container">
+                <div class="nav_social">
+                    <div class="contact_navs">
+                        <div class="navs">
+                            <div class="nav" onclick="location.href = '/work.html';">Work</div>
+                            <div class="nav" onclick="location.href = '/bmsm.html';">MSBM Diploma</div>
+                            <div class="nav" onclick="location.href = '/scholarship.html';">The SA Fund</div>
+                            <div class="nav" onclick="location.href = '/career.html';">Careers</div>
+                            <div class="nav" onclick="location.href = '/about_us.html';">About</div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact__small">LET'S TALK ABOUT YOU</div>
+                            <div>hello@syracuseafrica.co</div>
+                            <div>+234 1 453 6589</div>
+                        </div>
+                    </div>
+
+                    <div class="address_socials">
+                        <div class="socials">
+                            <div class="social">Blog</div>
+                            <div class="social">Facebook</div>
+                            <div class="social">Instagram</div>
+                            <div class="social">Twitter</div>
+                            <div class="social">Linkedln</div>    
+                        </div>
+
+                        <div class="contact">
+                            <div class="contact__small">OUR OFFICE</div>
+                            <div>54B, Adeniyi Jones Ave,</div>
+                            <div>Ikeja, Lagos.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="navigation__hello">Say hello</span>
+        </div>
+    </div>
+
+
+    <div class="container career">
         
         <section class="top">
             <div class="header_banner">
                 <header class="header">
-                    <div class="logo"><img src="./images/logo.svg" alt="logo.svg" /></div>
-                    <div class="menu"><img src="./images/menu.svg" alt="menu.svg" /></div>
-                </header>   
-                <div class="container_bmsm__header container_career2__header">
+                    <div class="logo" onclick="location.href = '/index.html';"><img src="./images/logo.svg" alt="logo.svg" /></div>
+                    <div class="menu" id="menu__open" onclick="menu('open')"><img src="./images/menu.svg" alt="menu.svg" /></div>
+                </header>
+                <div class="container container_bmsm__header container_career2__header">
                     <div class="career2_header__subtitle">
                         <div class="header_subtitle header_subtitle__margin">
-                            <img src="./images/carbon_group.svg" alt="">
+                            <img src="./images/career_detail_icon.svg" alt="">
                             <p class="career2_subtitle"> design</p>
                         </div>
                         <div class="header_subtitle">
@@ -31,9 +81,8 @@
                        <p class=" bmsm_title career_details__heading"> Senior Graphic Designer</p>
                     </p>
 
-                    <a class="bmsm_link career_details__link">
-                        <i class="fa fa-plus career-fa-plus" aria-hidden="true"></i>
-                        APPLY NOW
+                    <a class=" career_details__link">
+                        <i class="fa fa-plus career-fa-plus" aria-hidden="true"></i> <span class="career2_subtitle">APPLY NOW</span>
                     </a>
                     
                     <div class="career_brands">
@@ -48,8 +97,7 @@
                
             </div>
 
-           
-
+    
             <div class="scroll_direction__web">
                 <div>
                     <div class="scroll_direction__title">Scroll, please.</div>
@@ -59,20 +107,24 @@
             </div>
         </section>
 
-        <section>
-            <div class="container container_bmsm container_career2_details">
+        
+        <section class="container">
+            <div class="career_container">
                
-                <div class="container_bmsm__maincontent">
+                <div class="career_container__content">
                     <div class="career2_section1">
-                        <p class="bmsm_content__description">Syracuse Africa is a pre-IPO unicorn. We are growing rapidly and looking for exceptional 
+                        <p class="career2_section_description">
+                            Syracuse Africa is a pre-IPO unicorn. We are growing rapidly and looking for exceptional 
                             new team members to add to our teams and will help take us to the next level. One team, one score. We never compromise on identity. 
                             You should never compromise yours either. We want you to bring your whole self to Auth0. If you’re passionate, practice radical transparency 
                             to build trust and respect, and thrive when you’re collaborating, experimenting and learning – this may be your ideal work environment. 
-                            We are looking for team members that want to help us build upon what we have accomplished so far and make it better every day. N+1 > N.</p>
+                            We are looking for team members that want to help us build upon what we have accomplished so far and make it better every day. N+1 > N.
+                        </p>
 
-                        <p class="bmsm_content__description">We are looking for a Senior Graphic Designer to help drive existing customers to expand their adoption 
-                            of Auth0's Identity Platform through effective cross-sell and upsell programs. </p>
-    
+                        <p class="career2_section_description">
+                            We are looking for a Senior Graphic Designer to help drive existing customers to expand their adoption 
+                            of Auth0's Identity Platform through effective cross-sell and upsell programs. 
+                        </p>
                     </div>
 
                    
@@ -118,7 +170,7 @@
 
 
                    <div class="career2_section6">
-                       <p  class="bmsm_content__description">Syracuse Africa’s mission is to help developers innovate faster. Every company is becoming a software company and developers 
+                       <p  class="career2_section_description">Syracuse Africa’s mission is to help developers innovate faster. Every company is becoming a software company and developers 
                            are at the center of this shift. They need better tools and building blocks so they can stay focused on innovating. One of these
                             building blocks is identity: authentication and authorization. That’s what we do. Our platform handles 2.5B logins per month for thousands 
                             of customers around the world. From indie makers to Fortune 500 companies, we can handle any use case. We like to think that we are helping 

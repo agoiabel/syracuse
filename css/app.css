@@ -1384,14 +1384,12 @@ a {
   display: flex;
   text-align: center;
   align-items: center;
-  padding: 80px 20px 60px 20px;
   flex-direction: column;
 }
 @media only screen and (min-width: 1000px) {
   .container_bmsm__header {
     text-align: left;
     align-items: flex-start;
-    padding-left: 100px;
     margin-bottom: -120px;
   }
 }
@@ -1479,9 +1477,6 @@ a {
   }
 }
 
-.container_bmsm__maincontent {
-  padding: 80px 5px 40px 35px;
-}
 @media only screen and (min-width: 1000px) {
   .container_bmsm__maincontent {
     padding: 100px 5px 40px 50px;
@@ -1824,6 +1819,19 @@ a {
   }
 }
 
+.bmsm .container_bmsm__header {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+.bmsm .container_bmsm {
+  margin-top: 85px;
+}
+@media only screen and (min-width: 1000px) {
+  .bmsm .container_bmsm {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .scholarship .bmsm_subtitle {
     width: 40%;
@@ -2134,122 +2142,6 @@ a {
   margin: 0 auto 50px;
 }
 
-@media only screen and (min-width: 1000px) {
-  .container_career2__header .career_details__heading {
-    width: 100%;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 80px;
-  }
-}
-.container_career2__header .career2_header__subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  color: #4F4F4F;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  margin-bottom: -50px;
-  text-transform: capitalize;
-  display: flex;
-}
-@media only screen and (min-width: 1000px) {
-  .container_career2__header .career2_header__subtitle {
-    margin-bottom: -60px;
-  }
-}
-.container_career2__header .header_subtitle__margin {
-  margin-right: 20px;
-}
-.container_career2__header .career2_subtitle {
-  margin-left: 10px;
-}
-.container_career2__header .header_subtitle {
-  display: flex;
-}
-
-.career_brands .brands_title {
-  font-family: "Archia-semibold";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  color: #4F4F4F;
-  line-height: 24px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.career_brands .career_twitter__brand {
-  margin: 0 15px;
-}
-
-.container_career2_details {
-  margin-top: -50px;
-}
-@media only screen and (min-width: 1000px) {
-  .container_career2_details {
-    width: 80%;
-    margin-top: 230px;
-    padding-left: 50px;
-    margin-bottom: -150px;
-    padding-bottom: 80px;
-    background: #FFFFFF;
-    box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
-  }
-}
-
-.career2_section1 {
-  margin-bottom: 80px;
-}
-
-@media only screen and (min-width: 1000px) {
-  .container_career2__benefits {
-    margin: 80px 0;
-  }
-}
-
-.career2_section6 {
-  margin-bottom: 120px;
-}
-
-.career2_section7 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.career2_section7 .career2_section7__heading {
-  font-family: "Archia-bold";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  color: #828282;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-}
-.career2_section7 .brands_title {
-  text-align: center;
-}
-
-.career2_content li {
-  font-family: "Archia-light";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  color: #333333;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-}
-
-.career_details__link {
-  margin: 90px 0 60px;
-  display: block;
-}
-
-.career-fa-plus {
-  color: #333333;
-}
-
 .navigation {
   width: 100%;
   height: 100vh;
@@ -2267,8 +2159,16 @@ a {
 }
 .navigation .nav_social {
   display: flex;
-  align-items: flex-end;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1000px) {
+  .navigation .nav_social {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.navigation .contact_navs {
+  margin-bottom: 25px;
 }
 .navigation .navs {
   margin-right: 300px;
@@ -2281,20 +2181,33 @@ a {
   text-decoration: none;
 }
 .navigation .nav {
+  cursor: pointer;
   font-family: "Archia-medium";
   font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
-  letter-spacing: -0.05em;
-  cursor: pointer;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+}
+@media only screen and (min-width: 1000px) {
+  .navigation .nav {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.05em;
+  }
 }
 .navigation .social {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .navigation .social {
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
 .navigation .contact {
   margin-top: 45px;
@@ -2346,6 +2259,7 @@ a {
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   z-index: -1;
+  display: none;
 }
 
 .link__grow {
@@ -2356,6 +2270,498 @@ a {
 #link__grow span:hover {
   color: #FFF;
   cursor: pointer;
+}
+
+.container_career2__header {
+  margin-top: 100px;
+}
+.container_career2__header .career_details__heading {
+  font-family: "Archia-medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -0.05em;
+}
+@media only screen and (min-width: 1000px) {
+  .container_career2__header .career_details__heading {
+    width: 100%;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 80px;
+  }
+}
+.container_career2__header .career2_header__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #4F4F4F;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  margin-bottom: -50px;
+  text-transform: capitalize;
+  display: flex;
+}
+@media only screen and (min-width: 1000px) {
+  .container_career2__header .career2_header__subtitle {
+    margin-bottom: -60px;
+  }
+}
+.container_career2__header .header_subtitle__margin {
+  margin-right: 20px;
+}
+.container_career2__header .career2_subtitle {
+  font-family: "Roboto";
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+}
+.container_career2__header .header_subtitle {
+  display: flex;
+}
+
+.career_brands .brands_title {
+  font-family: "Archia-semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4F4F4F;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.career_brands .career_twitter__brand {
+  margin: 0 15px;
+}
+
+.career_container {
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+}
+.career_container__content {
+  padding: 65px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container_career2_details {
+    width: 80%;
+    margin-top: 230px;
+    padding-bottom: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+  }
+}
+
+.career2_section1 {
+  margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container_career2__benefits {
+    margin: 80px 0;
+  }
+}
+
+.career2_section6 {
+  margin-bottom: 120px;
+}
+
+.career2_section7 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.career2_section7 .career2_section7__heading {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #828282;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+}
+.career2_section7 .brands_title {
+  text-align: center;
+}
+
+.career2_content li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+.career_details__link {
+  margin: 90px 0 60px;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #333333;
+}
+
+.career-fa-plus {
+  color: #333333;
+  font-weight: normal;
+}
+
+.career2_section_description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.work_detail .top_banner {
+  margin: 80px auto 50px auto;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .top_banner {
+    display: flex;
+  }
+}
+.work_detail .top_banner__header {
+  font-family: "Archia-medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+.work_detail .top_banner__subheader {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #828282;
+}
+.work_detail .top_banner__description {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+  width: 45%;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .top_banner__description {
+    width: 25%;
+  }
+}
+.work_detail .top_banner__header__subheader {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .top_banner__header__subheader {
+    margin-right: 30%;
+  }
+}
+.work_detail .big_empty {
+  width: 100%;
+  height: 300px;
+  background: #EEF8A2;
+  box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .big_empty {
+    height: 500px;
+    margin-top: -130px;
+  }
+}
+.work_detail .work_detail__description .top_banner__header {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+}
+.work_detail .work_detail__descriptions {
+  margin-bottom: 70px;
+}
+.work_detail .work_detail__descriptions .big_empty {
+  margin-top: 100px;
+  background: #8BBE45;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .work_detail__descriptions .big_empty {
+    height: 400px;
+  }
+}
+.work_detail .work_detail__descriptions .work_detail__description {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .work_detail__descriptions .work_detail__description {
+    width: 25%;
+  }
+}
+.work_detail .work_detail__descriptions .work_detail__description_header {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #333333;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .work_detail__descriptions .work_detail__description_header {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+  }
+}
+.work_detail .work_detail__descriptions .work_detail__description_content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4F4F4F;
+  letter-spacing: 0.02em;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .work_detail__descriptions .work_detail__description_content {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+  }
+}
+.work_detail .work_detail__descriptions .work_detail__description__big_empty .alternate {
+  width: 100%;
+  margin-top: 35px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .work_detail__descriptions .work_detail__description__big_empty .alternate {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.work_detail .plan__b {
+  margin-top: 200px;
+}
+.work_detail .plan__b__quote {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .plan__b__quote {
+    display: none;
+  }
+}
+.work_detail .plan__b__quote_name {
+  margin-top: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .plan__b__quote_name {
+    display: none;
+  }
+}
+.work_detail .plan__b .work_detail__description {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .plan__b .work_detail__description {
+    display: unset;
+    margin-top: 150px;
+  }
+}
+.work_detail .plan__b .big_empty {
+  width: 100%;
+  height: 350px;
+  background-color: #7368A4;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .plan__b .big_empty {
+    width: 30%;
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .plan__b .work_detail__description__big_empty {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.work_detail .plan__c {
+  margin-top: 100px;
+}
+.work_detail .plan__c .big_empties {
+  display: flex;
+  justify-content: space-between;
+}
+.work_detail .plan__c .big_empties .big_empty {
+  width: 48%;
+  background-color: #E48A7F;
+}
+.work_detail .result {
+  margin-top: 150px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.work_detail .result__description {
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .result__description {
+    width: 50%;
+  }
+}
+.work_detail .result__header {
+  font-family: "Archia-bold";
+  letter-spacing: -0.02em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 28px;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.work_detail .result__content {
+  font-family: "Roboto";
+  letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4F4F4F;
+  margin-bottom: 35px;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .result__content {
+    width: 70%;
+  }
+}
+.work_detail .result__image {
+  width: 100%;
+  height: 300px;
+  background: #FFFFFF;
+  box-shadow: 0px 16px 32px rgba(120, 108, 132, 0.05);
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail .result__image {
+    width: 40%;
+    height: 400px;
+  }
+}
+.work_detail .location {
+  display: flex;
+  margin-top: 150px;
+}
+.work_detail .location__step_one {
+  margin-right: 100px;
+}
+.work_detail .location__step_two {
+  margin-right: 100px;
+}
+.work_detail .location__content {
+  margin-bottom: 25px;
+}
+.work_detail .location__title {
+  font-family: "Archia-medium";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #828282;
+}
+.work_detail .location__description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.work_detail_footer {
+  background: #0E0C0B;
+}
+.work_detail_footer .footer__bottoms {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #4F4F4F;
+  padding: 35px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail_footer .footer__bottoms {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.work_detail_footer .work_detail_project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work_detail_footer .project__next {
+  width: 30%;
+  text-align: center;
+  margin: 200px auto;
+}
+.work_detail_footer .project__next_link {
+  display: inline-block;
+  padding: 15px;
+  background: #333333;
+  border-radius: 30px;
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.work_detail_footer .project__next_title {
+  font-family: "Archia-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #F8F8F8;
+  margin: 25px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .work_detail_footer .project__next_title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.05em;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
