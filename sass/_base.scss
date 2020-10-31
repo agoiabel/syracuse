@@ -80,6 +80,14 @@ a {
 .fa-long-arrow-up {
     font-weight: lighter;
     transform: rotate(45deg);
-
-   
+}
+.page_image_layout {
+    width: 100%;
+    img {
+        width: 100%;
+        object-fit: cover;
+        background-size: 100% 100%;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }

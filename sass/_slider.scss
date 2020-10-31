@@ -55,6 +55,7 @@
         padding: 35px;
         align-items: flex-end;
 
+        
         &__title {
             font-family: "Archia-bold";
             letter-spacing: -0.02em;            
@@ -73,27 +74,60 @@
         }
     }
     .slider_one {
-        background: #9068C0;        
+        height: 450px;
+        background: url("../images/slider_one.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .slider_two {
-        background: #F1C191;        
+        background: url("../images/slider_two.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_three {
-        background: #8BBE45;        
+        background: url("../images/slider_three.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_four {
-        background: #D81D6C;        
+        background: url("../images/slider_four.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_five {
-        background: #9068C0;        
+        background: url("../images/slider_one.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_six {
-        background: #F1C191;        
+        background: url("../images/slider_two.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_seven {
-        background: #8BBE45;        
+        background: url("../images/slider_three.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;        
     }
     .slider_eight {
-        background: #8BBE45;        
+        background: url("../images/slider_four.svg") no-repeat center center fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;         
     }
 }

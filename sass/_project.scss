@@ -11,6 +11,19 @@
 
     .project {
 
+
+        &__image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-background-size: 100%;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 300px;
+            width: 100%;
+        }
+
+
         @include screen('desktop') {
             width: 500px;
             min-width: 500px;
@@ -34,6 +47,7 @@
 
         &--large {
             height: 450px;
+
         }
         &--small {
             height: 300px;
